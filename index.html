@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body
+        {
+            margin: 0px;
+            padding: 0px;
+        }
+        #map
+        {
+            height: 100vh;
+            width: 100vw;
+        }
+    </style>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
+    <title>corona cases</title>
+</head>
+<body>
+    <div id='map'></div>
+    
+</body>
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
+<script>
+  mapboxgl.accessToken = 'pk.eyJ1IjoiYXl1c2g5NCIsImEiOiJjbG11emxsYjEwMzk4MmtuenFiNG1qMzFhIn0.lDMRviCyow86rEcydfiQcQ';
+  var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/dark-v10'
+  });
+</script>
+<script src="index.js"></script>
+</html>
